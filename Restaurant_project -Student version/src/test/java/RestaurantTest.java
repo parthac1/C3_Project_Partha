@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.time.LocalTime;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -66,4 +67,15 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //<<<<<<<<<<<<<<Displaying cost of selected items>>>>>>>>>>>>
+    @Test
+    public void returning_the_cost_of_selected_items () {
+        List<Item> selectedItem = null;
+        Item item1 = new Item("Chicken fry pieces", 150);
+        Item item2 = new Item("Chicken tandoori", 195);
+        selectedItem .add(item1);
+        selectedItem .add(item1);
+    }
+
 }
